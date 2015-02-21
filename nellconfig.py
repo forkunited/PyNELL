@@ -2,9 +2,7 @@ from ConfigParser import ConfigParser
 from nlpgo import *
 
 class NELLConfig(dict):
-    def __init__(self, configParser):
-        eng = core.Engine()
-        
+    def __init__(self, configParser, eng):
         for section in configParser.sections():
             sectionDict = dict()
 
@@ -18,6 +16,8 @@ class NELLConfig(dict):
                 curDict[keyParts[len(keyParts)-1]] = value
 
             self[section] = sectionDict
-        
-            eng.setConfigValue('MitiePosTagger', section + '_Model', sectionDict['nlpgo']['mitiePosTaggerModelPath'])
-            eng.setConfigValue('MitieNER', section + '_Model', sectionDict['nlpgo']['mitieNERModelPath'])        
+
+            eng.setConfigValue('MitiePosTagger', section + '_Model', sectionDict['nlpgo']['mitiepostaggermodelpath'])
+            eng.setConfigValue('MitieNER', section + '_Model', sectionDict['nlpgo']['mitienermodelpath'])        
+
+

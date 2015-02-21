@@ -1,0 +1,18 @@
+[en]
+
+nlpgo_mitiePosTaggerModelPath = /home/wmcdowel/NELL/NLPGo/nlpgo/models/nlpgo_pos_english_mitie_conll2003.dat
+nlpgo_mitieNERModelPath = /home/wmcdowel/NELL/NLPGo/nlpgo/models/nlpgo_ner_english_mitie_conll2003.dat
+
+regex_contextBefore_adj = (DET)(ADJ)
+regex_contextAfter_vbz = VBZ
+regex_np_ner = <ner:ANY>
+
+[es]
+
+nlpgo_mitiePosTaggerModelPath = /home/wmcdowel/NELL/NLPGo/nlpgo/models/nlpgo_pos_spanish_mitie_conll2002.dat
+nlpgo_mitieNERModelPath = /home/wmcdowel/NELL/NLPGo/nlpgo/models/ner_spanish_mitie_conll2002.dat
+
+regex_contextBefore_vbz = VBZ
+regex_contextAfter_adj = ADJ
+regex_np_ner = <ner:ANY>
+
